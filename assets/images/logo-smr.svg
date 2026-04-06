@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-labelledby="title desc">
+  <title id="title">Shilungwa Mining and Resources logo</title>
+  <desc id="desc">Stylized SMR mark with company name on a dark blue gradient panel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06203a"/>
+      <stop offset="1" stop-color="#0f3f6a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#27b4ff"/>
+      <stop offset="1" stop-color="#dce8f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="320" rx="28" fill="url(#bg)"/>
+  <g transform="translate(34 40)">
+    <rect width="240" height="240" rx="24" fill="#04162a" stroke="#4ea8df" stroke-width="4"/>
+    <path d="M36 188V54h52c30 0 48 14 48 38 0 15-8 26-20 32 18 6 29 20 29 38 0 29-22 46-58 46H36zm32-80v53h18c17 0 28-10 28-26 0-17-11-27-30-27H68zm0-27h16c13 0 22-8 22-20 0-12-9-19-22-19H68v39z" fill="#dce8f5"/>
+    <path d="M158 188V54h30l54 81V54h32v134h-30l-54-81v81h-32z" fill="url(#accent)"/>
+  </g>
+  <g transform="translate(305 86)" fill="#e9f3ff" font-family="'Exo 2', 'Trebuchet MS', sans-serif">
+    <text font-size="68" font-weight="800" letter-spacing="1.2">SHILUNGWA</text>
+    <text y="72" font-size="43" font-weight="700" letter-spacing="1">MINING AND RESOURCES</text>
+    <rect x="0" y="102" width="392" height="5" rx="3" fill="url(#accent)"/>
+    <text y="145" font-size="23" fill="#b7cbdf" font-family="'Manrope', 'Segoe UI', sans-serif" letter-spacing="1.8">POWERING THE PRESENT</text>
+  </g>
+</svg>

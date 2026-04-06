@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 550" role="img" aria-labelledby="title desc">
+  <title id="title">Processing and logistics</title>
+  <desc id="desc">Rail logistics line moving processed material to market.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b243c"/>
+      <stop offset="1" stop-color="#153e61"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="550" rx="24" fill="url(#bg)"/>
+  <rect x="76" y="94" width="728" height="164" rx="18" fill="#264f72" opacity="0.8"/>
+  <rect x="108" y="126" width="138" height="100" rx="12" fill="#6ca7d1"/>
+  <rect x="268" y="126" width="138" height="100" rx="12" fill="#4f8ab6"/>
+  <rect x="428" y="126" width="138" height="100" rx="12" fill="#3f7399"/>
+  <rect x="588" y="126" width="184" height="100" rx="12" fill="#2c5b7e"/>
+  <g transform="translate(80 312)">
+    <path d="M10 120c160-110 310-110 470 0 112 74 220 74 320 0" stroke="#b7ccd9" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <path d="M10 120c160-110 310-110 470 0 112 74 220 74 320 0" stroke="#243748" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <g transform="translate(230 26)">
+      <rect width="260" height="62" rx="12" fill="#25b1ff"/>
+      <rect x="14" y="16" width="42" height="20" rx="4" fill="#1a3851"/>
+      <rect x="70" y="16" width="42" height="20" rx="4" fill="#1a3851"/>
+      <rect x="128" y="16" width="42" height="20" rx="4" fill="#1a3851"/>
+      <circle cx="44" cy="66" r="16" fill="#1b2836"/>
+      <circle cx="216" cy="66" r="16" fill="#1b2836"/>
+    </g>
+  </g>
+</svg>

@@ -4,12 +4,13 @@ This repository contains a responsive static website for Shilungwa Mining and Re
 
 ## Logo Setup
 
-1. Place your provided logo image in:
+The site now ships with a built-in SVG logo at `assets/images/logo-smr.svg`, so branding renders by default.
 
-`assets/images/logo-smr.png`
+If you want to replace it with your own file:
 
-1. Keep the filename exactly as `logo-smr.png` for immediate rendering.
-1. Recommended: use a transparent PNG and at least 1200px width for crisp display.
+1. Add your custom image to `assets/images/`.
+1. Update the `src` value for `.brand-logo` in `index.html`.
+1. Recommended size: at least 1200px wide for raster images.
 
 If the logo is not present, the site shows a styled `SMR` fallback badge.
 

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 920" role="img" aria-labelledby="title desc">
+  <title id="title">Open-pit mining operation</title>
+  <desc id="desc">Stylized open-pit mine with terraces, vehicles, and sunrise sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#123f64"/>
+      <stop offset="1" stop-color="#0a1d30"/>
+    </linearGradient>
+    <linearGradient id="rockA" x1="0" x2="1">
+      <stop offset="0" stop-color="#4b5f70"/>
+      <stop offset="1" stop-color="#7a8ea2"/>
+    </linearGradient>
+    <linearGradient id="rockB" x1="0" x2="1">
+      <stop offset="0" stop-color="#2a3947"/>
+      <stop offset="1" stop-color="#576a7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1240" height="920" fill="url(#sky)"/>
+  <circle cx="950" cy="180" r="96" fill="#f9d08a" opacity="0.82"/>
+  <path d="M0 380h1240v540H0z" fill="#192b3b"/>
+  <path d="M0 530l180-80 220 58 250-75 200 70 390-120v537H0z" fill="url(#rockA)"/>
+  <path d="M0 620l220-70 210 45 240-52 225 70 345-80v387H0z" fill="url(#rockB)"/>
+  <path d="M130 640h940" stroke="#9cb5c9" stroke-width="14" stroke-linecap="round" opacity="0.7"/>
+  <path d="M140 695h920" stroke="#9cb5c9" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+  <path d="M170 748h870" stroke="#9cb5c9" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <g transform="translate(320 590)">
+    <rect x="0" y="45" width="170" height="66" rx="10" fill="#f2c44f"/>
+    <rect x="118" y="8" width="52" height="52" rx="8" fill="#f2c44f"/>
+    <rect x="124" y="16" width="40" height="26" rx="5" fill="#22384f"/>
+    <circle cx="38" cy="117" r="20" fill="#1a2430"/>
+    <circle cx="130" cy="117" r="20" fill="#1a2430"/>
+    <path d="M171 48l78-36" stroke="#f2c44f" stroke-width="16" stroke-linecap="round"/>
+    <path d="M248 12l50 14" stroke="#f2c44f" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(780 612)">
+    <rect width="148" height="56" rx="10" fill="#2db2ff"/>
+    <rect x="18" y="12" width="36" height="20" rx="4" fill="#1f3550"/>
+    <circle cx="35" cy="64" r="16" fill="#172330"/>
+    <circle cx="112" cy="64" r="16" fill="#172330"/>
+  </g>
+</svg>

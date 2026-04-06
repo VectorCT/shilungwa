@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -23,7 +23,7 @@
     <header class="site-header">
       <a href="#top" class="brand" aria-label="Shilungwa Mining and Resources home">
         <img
-          src="assets/images/logo-smr.png"
+          src="assets/images/logo-smr.svg"
           alt="Shilungwa Mining and Resources logo"
           class="brand-logo"
           width="380"
@@ -35,6 +35,7 @@
       <nav id="main-nav" class="main-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#operations">Operations</a>
+        <a href="#approach">Approach</a>
         <a href="#sustainability">Sustainability</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -42,44 +43,90 @@
 
     <main id="top">
       <section class="hero reveal">
-        <p class="kicker">Shilungwa Mining and Resources</p>
-        <h1>Powering the Present, Reshaping the Future</h1>
-        <p class="hero-copy">
-          We combine disciplined extraction, resilient logistics, and responsible environmental
-          stewardship to deliver high-value resources across regional and global markets.
-        </p>
-        <div class="hero-actions">
-          <a href="#operations" class="btn btn-primary">Explore Operations</a>
-          <a href="#contact" class="btn btn-secondary">Partner With Us</a>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="kicker">Shilungwa Mining and Resources</p>
+            <h1>Powering the Present, Reshaping the Future</h1>
+            <p class="hero-copy">
+              We combine disciplined extraction, resilient logistics, and responsible environmental
+              stewardship to deliver high-value resources across regional and global markets.
+            </p>
+            <ul class="hero-tags" aria-label="Business focus">
+              <li>Resource Development</li>
+              <li>Operational Excellence</li>
+              <li>Regional Partnerships</li>
+            </ul>
+            <div class="hero-actions">
+              <a href="#operations" class="btn btn-primary">Explore Operations</a>
+              <a href="#contact" class="btn btn-secondary">Partner With Us</a>
+            </div>
+          </div>
+          <img
+            class="hero-image"
+            src="assets/images/hero-pit.svg"
+            alt="Open-pit mining operation illustration"
+            width="620"
+            height="460"
+          />
         </div>
       </section>
 
+      <section class="impact-band reveal" aria-label="Performance highlights">
+        <article>
+          <p class="impact-value">24/7</p>
+          <p class="impact-label">Integrated site monitoring</p>
+        </article>
+        <article>
+          <p class="impact-value">99.2%</p>
+          <p class="impact-label">Logistics consistency</p>
+        </article>
+        <article>
+          <p class="impact-value">14+</p>
+          <p class="impact-label">Strategic industry partners</p>
+        </article>
+        <article>
+          <p class="impact-value">0 Harm</p>
+          <p class="impact-label">Safety-first operating culture</p>
+        </article>
+      </section>
+
       <section id="about" class="panel reveal">
-        <h2>Built on Performance and Accountability</h2>
-        <p>
-          Shilungwa Mining and Resources is committed to reliable production, transparent governance,
-          and long-term value for communities, employees, and industry partners.
-        </p>
-        <div class="metrics">
-          <article>
-            <h3>24/7</h3>
-            <p>Integrated operations and monitoring</p>
-          </article>
-          <article>
-            <h3>99.2%</h3>
-            <p>Annual logistics fulfillment consistency</p>
-          </article>
-          <article>
-            <h3>0 Harm</h3>
-            <p>Safety-first culture in every phase</p>
-          </article>
+        <p class="section-kicker">Who We Are</p>
+        <h2>Built on Performance, Accountability, and Long-Term Impact</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              Shilungwa Mining and Resources is committed to reliable production, transparent
+              governance, and long-term value for communities, employees, and industry partners.
+            </p>
+            <p>
+              Our integrated operating model combines exploration intelligence, disciplined site
+              execution, and resilient downstream logistics to keep delivery strong in changing
+              market conditions.
+            </p>
+          </div>
+          <img
+            src="assets/images/exploration.svg"
+            alt="Team planning exploration and production strategy"
+            class="about-image"
+            width="520"
+            height="320"
+          />
         </div>
       </section>
 
       <section id="operations" class="panel reveal">
+        <p class="section-kicker">What We Do</p>
         <h2>Core Business Units</h2>
         <div class="cards">
           <article class="card">
+            <img
+              class="card-image"
+              src="assets/images/exploration.svg"
+              alt="Geological exploration map and markers"
+              width="360"
+              height="220"
+            />
             <h3>Resource Exploration</h3>
             <p>
               Data-driven exploration programs that identify and validate high-potential deposits
@@ -87,6 +134,13 @@
             </p>
           </article>
           <article class="card">
+            <img
+              class="card-image"
+              src="assets/images/operations.svg"
+              alt="Mining machinery at work"
+              width="360"
+              height="220"
+            />
             <h3>Mining Operations</h3>
             <p>
               Scalable extraction workflows supported by modern equipment, predictive maintenance,
@@ -94,6 +148,13 @@
             </p>
           </article>
           <article class="card">
+            <img
+              class="card-image"
+              src="assets/images/logistics.svg"
+              alt="Rail and logistics network illustration"
+              width="360"
+              height="220"
+            />
             <h3>Processing & Logistics</h3>
             <p>
               End-to-end processing and delivery systems designed for quality assurance, route
@@ -103,23 +164,99 @@
         </div>
       </section>
 
+      <section id="approach" class="panel reveal">
+        <p class="section-kicker">How We Deliver</p>
+        <h2>Execution Framework</h2>
+        <div class="approach-grid">
+          <article class="approach-step">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>
+              Geological intelligence and site analytics identify viable reserves with precision and
+              speed.
+            </p>
+          </article>
+          <article class="approach-step">
+            <span>02</span>
+            <h3>Develop</h3>
+            <p>
+              Modular development plans bring operations online safely while controlling risk and
+              capital exposure.
+            </p>
+          </article>
+          <article class="approach-step">
+            <span>03</span>
+            <h3>Deliver</h3>
+            <p>
+              Processing and logistics systems maintain quality, predictability, and traceability to
+              market.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section id="sustainability" class="panel reveal">
+        <p class="section-kicker">Responsible Growth</p>
         <h2>Sustainability in Action</h2>
-        <ul class="checks">
-          <li>Progressive rehabilitation and biodiversity restoration plans</li>
-          <li>Water and energy efficiency systems across active sites</li>
-          <li>Local supplier development and workforce training initiatives</li>
-          <li>Transparent compliance with industry and regulatory standards</li>
-        </ul>
+        <div class="sustain-layout">
+          <ul class="checks">
+            <li>Progressive rehabilitation and biodiversity restoration plans</li>
+            <li>Water and energy efficiency systems across active sites</li>
+            <li>Local supplier development and workforce training initiatives</li>
+            <li>Transparent compliance with industry and regulatory standards</li>
+          </ul>
+          <aside class="sustain-card" aria-label="Sustainability commitment">
+            <p class="quote-mark">"</p>
+            <p>
+              We build for decades, not quarters. Every operational decision is measured against
+              safety, environmental stewardship, and shared value creation.
+            </p>
+            <p class="quote-author">Executive Leadership Team</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <p class="section-kicker">Latest Focus</p>
+        <h2>Strategic Priorities for 2026</h2>
+        <div class="news-grid">
+          <article>
+            <h3>Production Optimization</h3>
+            <p>
+              Expanded predictive maintenance and live performance dashboards to increase throughput
+              and reduce downtime.
+            </p>
+          </article>
+          <article>
+            <h3>Infrastructure Expansion</h3>
+            <p>
+              Corridor and terminal capability upgrades to strengthen export reliability and lead
+              times.
+            </p>
+          </article>
+          <article>
+            <h3>Community Development</h3>
+            <p>
+              Skills development and supplier participation initiatives focused on inclusive local
+              growth.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="contact" class="panel contact reveal">
-        <h2>Start a Conversation</h2>
+        <p class="section-kicker">Connect</p>
+        <h2>Start a Conversation With Our Team</h2>
         <p>
           For project opportunities, supply partnerships, or investor engagement, connect with our
-          team.
+          team and we will respond promptly.
         </p>
-        <a href="mailto:info@shilungwamining.com" class="btn btn-primary">info@shilungwamining.com</a>
+        <div class="contact-actions">
+          <a href="mailto:info@shilungwamining.com" class="btn btn-primary"
+            >info@shilungwamining.com</a
+          >
+          <a href="#top" class="btn btn-secondary">Back to Top</a>
+        </div>
       </section>
     </main>
 
