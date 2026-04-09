@@ -1,24 +1,34 @@
-const menuButton = document.querySelector('.menu-button');
-const mainNav = document.querySelector('.main-nav');
-const brandLogo = document.querySelector('.brand-logo');
-const brand = document.querySelector('.brand');
+// main.js — Orchestrator
+// Loaded after theme.js, nav.js, reveal.js, contact.js via separate script tags.
 
-if (brandLogo && brand) {
-  brandLogo.addEventListener('error', () => {
-    brand.classList.add('logo-missing');
-  });
-}
+document.addEventListener('DOMContentLoaded', function () {
+  // Theme: apply stored preference (or default light) immediately
+  initTheme();
 
-if (menuButton && mainNav) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(isOpen));
-  });
+  // Navigation: mobile menu toggle + close-on-link-click
+  initNav();
 
-  mainNav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      mainNav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
+  // Highlight the nav link matching the current page
+  highlightActivePage();
+
+  // Scroll-triggered reveal animations
+  initReveal();
+
+  // Contact form validation (no-ops if .contact-form is absent)
+  initContactForm();
+
+  // Theme toggle button
+  var themeBtn = document.querySelector('.theme-toggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', toggleTheme);
+  }
+
+  // Logo error fallback — show text brand when SVG fails to load
+  var brandLogo = document.querySelector('.brand-logo');
+  var brand = document.querySelector('.brand');
+  if (brandLogo && brand) {
+    brandLogo.addEventListener('error', function () {
+      brand.classList.add('logo-missing');
     });
-  });
-}
+  }
+});

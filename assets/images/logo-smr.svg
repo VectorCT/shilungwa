@@ -1,26 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-labelledby="title desc">
-  <title id="title">Shilungwa Mining and Resources logo</title>
-  <desc id="desc">Stylized SMR mark with company name on a dark blue gradient panel.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#06203a"/>
-      <stop offset="1" stop-color="#0f3f6a"/>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a8fd4"/>
+      <stop offset="50%" stop-color="#0d6fc6"/>
+      <stop offset="100%" stop-color="#0a5ca6"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#27b4ff"/>
-      <stop offset="1" stop-color="#dce8f5"/>
+    <linearGradient id="silver-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8eef4"/>
+      <stop offset="40%" stop-color="#b0c4d8"/>
+      <stop offset="100%" stop-color="#8aa4bc"/>
+    </linearGradient>
+    <linearGradient id="loop-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2196e3"/>
+      <stop offset="50%" stop-color="#0d6fc6"/>
+      <stop offset="100%" stop-color="#b0c4d8"/>
+    </linearGradient>
+    <linearGradient id="loop-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b0c4d8"/>
+      <stop offset="50%" stop-color="#0d6fc6"/>
+      <stop offset="100%" stop-color="#2196e3"/>
     </linearGradient>
   </defs>
-  <rect width="760" height="320" rx="28" fill="url(#bg)"/>
-  <g transform="translate(34 40)">
-    <rect width="240" height="240" rx="24" fill="#04162a" stroke="#4ea8df" stroke-width="4"/>
-    <path d="M36 188V54h52c30 0 48 14 48 38 0 15-8 26-20 32 18 6 29 20 29 38 0 29-22 46-58 46H36zm32-80v53h18c17 0 28-10 28-26 0-17-11-27-30-27H68zm0-27h16c13 0 22-8 22-20 0-12-9-19-22-19H68v39z" fill="#dce8f5"/>
-    <path d="M158 188V54h30l54 81V54h32v134h-30l-54-81v81h-32z" fill="url(#accent)"/>
-  </g>
-  <g transform="translate(305 86)" fill="#e9f3ff" font-family="'Exo 2', 'Trebuchet MS', sans-serif">
-    <text font-size="68" font-weight="800" letter-spacing="1.2">SHILUNGWA</text>
-    <text y="72" font-size="43" font-weight="700" letter-spacing="1">MINING AND RESOURCES</text>
-    <rect x="0" y="102" width="392" height="5" rx="3" fill="url(#accent)"/>
-    <text y="145" font-size="23" fill="#b7cbdf" font-family="'Manrope', 'Segoe UI', sans-serif" letter-spacing="1.8">POWERING THE PRESENT</text>
-  </g>
+
+  <!-- Infinity loop - left lobe -->
+  <ellipse cx="155" cy="62" rx="58" ry="42" fill="none" stroke="url(#loop-left)" stroke-width="14" stroke-linecap="round"/>
+  <!-- Infinity loop - right lobe -->
+  <ellipse cx="245" cy="62" rx="58" ry="42" fill="none" stroke="url(#loop-right)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Center overlap mask -->
+  <rect x="185" y="35" width="30" height="54" fill="none"/>
+
+  <!-- SMR Letters -->
+  <text x="148" y="78" font-family="'Sora','Trebuchet MS',sans-serif" font-size="52" font-weight="800" text-anchor="middle" fill="url(#silver-grad)">S</text>
+  <text x="200" y="78" font-family="'Sora','Trebuchet MS',sans-serif" font-size="52" font-weight="800" text-anchor="middle" fill="url(#silver-grad)">M</text>
+  <text x="254" y="78" font-family="'Sora','Trebuchet MS',sans-serif" font-size="52" font-weight="800" text-anchor="middle" fill="url(#silver-grad)">R</text>
+
+  <!-- Company Name -->
+  <text x="200" y="128" font-family="'Sora','Trebuchet MS',sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="url(#silver-grad)" letter-spacing="3">SHILUNGWA MINING</text>
+
+  <!-- Decorative lines -->
+  <line x1="90" y1="140" x2="170" y2="140" stroke="url(#blue-grad)" stroke-width="1.5"/>
+  <line x1="230" y1="140" x2="310" y2="140" stroke="url(#blue-grad)" stroke-width="1.5"/>
+
+  <!-- AND RESOURCES -->
+  <text x="200" y="155" font-family="'Sora','Trebuchet MS',sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="url(#silver-grad)" letter-spacing="5">AND RESOURCES</text>
+
+  <!-- Tagline -->
+  <text x="200" y="182" font-family="'Public Sans','Segoe UI',sans-serif" font-size="11" font-style="italic" text-anchor="middle" fill="#2196e3" letter-spacing="0.5">powering the present, reshaping the future</text>
 </svg>

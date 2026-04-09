@@ -1,0 +1,333 @@
+/* ===================================================
+   Layout — Header, Footer, Nav, Page Shell
+   =================================================== */
+
+/* ---- Site Header ---- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  padding: 0.65rem clamp(1rem, 3vw, 3rem);
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 12px rgba(15, 54, 92, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Dark theme header */
+[data-theme="dark"] .site-header {
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* ---- Brand / Logo ---- */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(140px, 18vw, 220px);
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  display: none;
+  width: clamp(100px, 18vw, 136px);
+  aspect-ratio: 2 / 1;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  align-items: center;
+  justify-content: center;
+  font-family: "Sora", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.brand.logo-missing .brand-logo {
+  display: none;
+}
+
+.brand.logo-missing .logo-fallback {
+  display: inline-flex;
+}
+
+/* ---- Menu Button (hamburger) ---- */
+
+.menu-button {
+  display: none;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-soft);
+  color: var(--text);
+  padding: 0.52rem 0.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu-button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ---- Theme Toggle ---- */
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  line-height: 1;
+  color: var(--text);
+  transition: background-color 0.2s ease;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-soft);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ---- Header Right Group (Contact + Toggle) ---- */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.header-right .btn {
+  white-space: nowrap;
+}
+
+/* ---- Main Nav ---- */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.93rem;
+  padding: 0.45rem 0.62rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background: var(--surface-soft);
+  color: var(--primary);
+}
+
+.main-nav a.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ---- Page Shell ---- */
+
+main {
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+/* ---- Site Footer ---- */
+
+.site-footer {
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto 1.5rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.8fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-brand .brand-logo {
+  width: clamp(120px, 14vw, 180px);
+  height: auto;
+}
+
+.footer-tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.footer-heading {
+  margin: 0 0 0.75rem;
+  font-family: "Sora", "Trebuchet MS", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--primary);
+}
+
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---- Dark Theme Layout Overrides ---- */
+
+[data-theme="dark"] .main-nav a:hover,
+[data-theme="dark"] .main-nav a:focus-visible {
+  color: #5bb8f5;
+}
+
+[data-theme="dark"] .footer-links a:hover,
+[data-theme="dark"] .footer-links a:focus-visible {
+  color: #5bb8f5;
+}
+
+/* ===================================================
+   Responsive — Header / Nav / Footer
+   =================================================== */
+
+@media (max-width: 980px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .menu-button {
+    display: inline-flex;
+    order: 3;
+  }
+
+  .header-right {
+    order: 2;
+  }
+
+  .main-nav {
+    order: 4;
+    width: 100%;
+    display: none;
+    padding-top: 0.55rem;
+    margin-top: 0.15rem;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    width: calc(100% - 1rem);
+  }
+
+  .brand-logo {
+    width: clamp(124px, 33vw, 172px);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

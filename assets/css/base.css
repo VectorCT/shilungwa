@@ -1,0 +1,103 @@
+/* ==========================================================================
+   base.css — Reset, typography, and global styles
+   Requirements: 13.2 (Sora headings, Public Sans body), 14.4 (prefers-reduced-motion)
+   ========================================================================== */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "Public Sans", "Segoe UI", sans-serif;
+  background: var(--page-bg);
+}
+
+/* Dark theme body background override */
+[data-theme="dark"] body {
+  background: var(--page-bg);
+}
+
+/* Heading typography */
+h1,
+h2,
+h3 {
+  font-family: "Sora", "Trebuchet MS", sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Decorative background orbs */
+.bg-orb {
+  position: fixed;
+  width: min(42vw, 380px);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  filter: blur(58px);
+  opacity: 0.24;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.orb-left {
+  top: -170px;
+  left: -120px;
+  background: #81b6e9;
+}
+
+.orb-right {
+  bottom: -190px;
+  right: -120px;
+  background: #f5c88d;
+}
+
+/* Dark theme: tone down decorative orbs */
+[data-theme="dark"] .orb-left {
+  background: #2a5e8e;
+  opacity: 0.16;
+}
+
+[data-theme="dark"] .orb-right {
+  background: #8a6a3a;
+  opacity: 0.16;
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.93rem;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn,
+  .card {
+    transition: none;
+  }
+}

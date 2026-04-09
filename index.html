@@ -17,11 +17,10 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-left" aria-hidden="true"></div>
-    <div class="bg-orb orb-right" aria-hidden="true"></div>
+    <a href="#top" class="skip-link">Skip to main content</a>
 
     <header class="site-header">
-      <a href="#top" class="brand" aria-label="Shilungwa Mining and Resources home">
+      <a href="index.html" class="brand" aria-label="Shilungwa Mining and Resources home">
         <img
           src="assets/images/logo-smr.svg"
           alt="Shilungwa Mining and Resources logo"
@@ -33,44 +32,66 @@
       </a>
       <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav id="main-nav" class="main-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#operations">Operations</a>
-        <a href="#approach">Approach</a>
-        <a href="#sustainability">Sustainability</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="careers.html">Careers</a>
+        <a href="news.html">News</a>
       </nav>
+      <div class="header-right">
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+        <button class="theme-toggle" aria-label="Switch to dark theme">🌙</button>
+      </div>
     </header>
 
     <main id="top">
+
+      <!-- Hero: Diagonal split with worker photo + floating stats -->
       <section class="hero reveal">
-        <div class="hero-layout">
-          <div class="hero-content">
-            <p class="kicker">Shilungwa Mining and Resources</p>
-            <h1>Powering the Present, Reshaping the Future</h1>
-            <p class="hero-copy">
-              We combine disciplined extraction, resilient logistics, and responsible environmental
-              stewardship to deliver high-value resources across regional and global markets.
-            </p>
-            <ul class="hero-tags" aria-label="Business focus">
-              <li>Resource Development</li>
-              <li>Operational Excellence</li>
-              <li>Regional Partnerships</li>
-            </ul>
-            <div class="hero-actions">
-              <a href="#operations" class="btn btn-primary">Explore Operations</a>
-              <a href="#contact" class="btn btn-secondary">Partner With Us</a>
-            </div>
+        <div class="hero-content">
+          <p class="kicker">Natural Resource › Mining and Metals</p>
+          <h1>Reducing operating costs, increasing safety and realizing greater profits</h1>
+          <p class="hero-copy">
+            Shilungwa Mining and Resources can help significantly reduce cost base and increase
+            output by changing the way work gets managed and done.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-secondary">Contact</a>
+            <a href="services.html" class="btn btn-primary">Read More</a>
           </div>
+        </div>
+        <div class="hero-visual">
           <img
-            class="hero-image"
-            src="assets/images/hero-pit.svg"
-            alt="Open-pit mining operation illustration"
-            width="620"
-            height="460"
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+            alt="Mining worker in safety gear smiling at camera"
+            width="480"
+            height="560"
           />
+          <div class="stat-badge">
+            <span class="stat-num">35%</span>
+            <span class="stat-text">Reduction in<br>sub-contractor costs</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-num">40%</span>
+            <span class="stat-text">Increase in<br>productivity</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-num">12%</span>
+            <span class="stat-text">Improvement in<br>working capital</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-num">15%</span>
+            <span class="stat-text">Reduction in<br>energy costs</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-num">30%</span>
+            <span class="stat-text">Reduction in<br>maintenance costs</span>
+          </div>
         </div>
       </section>
 
+      <!-- Impact Stats Band -->
       <section class="impact-band reveal" aria-label="Performance highlights">
         <article>
           <p class="impact-value">24/7</p>
@@ -86,184 +107,227 @@
         </article>
         <article>
           <p class="impact-value">0 Harm</p>
-          <p class="impact-label">Safety-first operating culture</p>
+          <p class="impact-label">Safety-first culture</p>
         </article>
       </section>
 
-      <section id="about" class="panel reveal">
-        <p class="section-kicker">Who We Are</p>
-        <h2>Built on Performance, Accountability, and Long-Term Impact</h2>
-        <div class="about-grid">
-          <div>
-            <p>
-              Shilungwa Mining and Resources is committed to reliable production, transparent
-              governance, and long-term value for communities, employees, and industry partners.
-            </p>
-            <p>
-              Our integrated operating model combines exploration intelligence, disciplined site
-              execution, and resilient downstream logistics to keep delivery strong in changing
-              market conditions.
-            </p>
+      <!-- About Section -->
+      <section class="section-block bg-light reveal">
+        <div class="section-inner">
+          <div class="split-layout">
+            <div class="split-text">
+              <p class="section-kicker">Who We Are</p>
+              <h2>Built on Performance, Accountability, and Long-Term Impact</h2>
+              <p>
+                Shilungwa Mining and Resources is committed to reliable production, transparent
+                governance, and long-term value for communities, employees, and industry partners.
+              </p>
+              <p>
+                Our integrated operating model combines exploration intelligence, disciplined site
+                execution, and resilient downstream logistics to keep delivery strong in changing
+                market conditions.
+              </p>
+              <a href="about.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <img
+              class="split-image"
+              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=700&q=80"
+              alt="Aerial view of mining operations with heavy machinery"
+              width="560"
+              height="420"
+            />
           </div>
-          <img
-            src="assets/images/exploration.svg"
-            alt="Team planning exploration and production strategy"
-            class="about-image"
-            width="520"
-            height="320"
-          />
         </div>
       </section>
 
-      <section id="operations" class="panel reveal">
-        <p class="section-kicker">What We Do</p>
-        <h2>Core Business Units</h2>
-        <div class="cards">
-          <article class="card">
+      <!-- Services Section -->
+      <section class="section-block bg-soft reveal">
+        <div class="section-inner">
+          <div class="split-layout reverse">
+            <div class="split-text">
+              <p class="section-kicker">What We Do</p>
+              <h2>Core Business Units</h2>
+              <p>
+                From resource exploration through to processing and logistics, we deliver integrated
+                solutions across the full mining value chain.
+              </p>
+              <ul class="checks">
+                <li>Data-driven exploration programs identifying high-potential deposits</li>
+                <li>Scalable extraction workflows with predictive maintenance</li>
+                <li>End-to-end processing and delivery for quality assurance</li>
+                <li>Environmental management and progressive rehabilitation</li>
+              </ul>
+              <div style="margin-top:1.2rem">
+                <a href="services.html" class="btn btn-primary">Explore Services</a>
+              </div>
+            </div>
             <img
-              class="card-image"
-              src="assets/images/exploration.svg"
-              alt="Geological exploration map and markers"
-              width="360"
-              height="220"
+              class="split-image"
+              src="https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=700&q=80"
+              alt="Mining equipment and excavators at work site"
+              width="560"
+              height="420"
             />
-            <h3>Resource Exploration</h3>
-            <p>
-              Data-driven exploration programs that identify and validate high-potential deposits
-              while limiting environmental disruption.
-            </p>
-          </article>
-          <article class="card">
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach Section -->
+      <section class="section-block bg-dark reveal">
+        <div class="section-inner">
+          <p class="section-kicker">How We Deliver</p>
+          <h2>Execution Framework</h2>
+          <div class="approach-row">
+            <div class="approach-item">
+              <span class="step-num">01</span>
+              <h3>Discover</h3>
+              <p>Geological intelligence and site analytics identify viable reserves with precision and speed.</p>
+            </div>
+            <div class="approach-item">
+              <span class="step-num">02</span>
+              <h3>Develop</h3>
+              <p>Modular development plans bring operations online safely while controlling risk and capital exposure.</p>
+            </div>
+            <div class="approach-item">
+              <span class="step-num">03</span>
+              <h3>Deliver</h3>
+              <p>Processing and logistics systems maintain quality, predictability, and traceability to market.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sustainability Section -->
+      <section class="section-block bg-light reveal">
+        <div class="section-inner">
+          <div class="split-layout">
+            <div class="split-text">
+              <p class="section-kicker">Responsible Growth</p>
+              <h2>Sustainability in Action</h2>
+              <ul class="checks">
+                <li>Progressive rehabilitation and biodiversity restoration plans</li>
+                <li>Water and energy efficiency systems across active sites</li>
+                <li>Local supplier development and workforce training initiatives</li>
+                <li>Transparent compliance with industry and regulatory standards</li>
+              </ul>
+              <blockquote class="quote-block">
+                <p>
+                  We build for decades, not quarters. Every operational decision is measured against
+                  safety, environmental stewardship, and shared value creation.
+                </p>
+                <p class="quote-author">— Executive Leadership Team</p>
+              </blockquote>
+            </div>
             <img
-              class="card-image"
-              src="assets/images/operations.svg"
-              alt="Mining machinery at work"
-              width="360"
-              height="220"
+              class="split-image"
+              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80"
+              alt="Rehabilitated mining land with restored vegetation"
+              width="560"
+              height="420"
             />
-            <h3>Mining Operations</h3>
-            <p>
-              Scalable extraction workflows supported by modern equipment, predictive maintenance,
-              and optimized site productivity.
-            </p>
-          </article>
-          <article class="card">
-            <img
-              class="card-image"
-              src="assets/images/logistics.svg"
-              alt="Rail and logistics network illustration"
-              width="360"
-              height="220"
-            />
-            <h3>Processing & Logistics</h3>
-            <p>
-              End-to-end processing and delivery systems designed for quality assurance, route
-              reliability, and reduced operational downtime.
-            </p>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section id="approach" class="panel reveal">
-        <p class="section-kicker">How We Deliver</p>
-        <h2>Execution Framework</h2>
-        <div class="approach-grid">
-          <article class="approach-step">
-            <span>01</span>
-            <h3>Discover</h3>
-            <p>
-              Geological intelligence and site analytics identify viable reserves with precision and
-              speed.
-            </p>
-          </article>
-          <article class="approach-step">
-            <span>02</span>
-            <h3>Develop</h3>
-            <p>
-              Modular development plans bring operations online safely while controlling risk and
-              capital exposure.
-            </p>
-          </article>
-          <article class="approach-step">
-            <span>03</span>
-            <h3>Deliver</h3>
-            <p>
-              Processing and logistics systems maintain quality, predictability, and traceability to
-              market.
-            </p>
-          </article>
+      <!-- News / Strategic Priorities -->
+      <section class="section-block bg-soft reveal">
+        <div class="section-inner">
+          <p class="section-kicker">Latest Focus</p>
+          <h2>Strategic Priorities for 2026</h2>
+          <div class="news-list">
+            <article class="news-item">
+              <span class="news-date">Q1 2026</span>
+              <div>
+                <h3>Production Optimization</h3>
+                <p>Expanded predictive maintenance and live performance dashboards to increase throughput and reduce downtime.</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <span class="news-date">Q2 2026</span>
+              <div>
+                <h3>Infrastructure Expansion</h3>
+                <p>Corridor and terminal capability upgrades to strengthen export reliability and lead times.</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <span class="news-date">Q3 2026</span>
+              <div>
+                <h3>Community Development</h3>
+                <p>Skills development and supplier participation initiatives focused on inclusive local growth.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="sustainability" class="panel reveal">
-        <p class="section-kicker">Responsible Growth</p>
-        <h2>Sustainability in Action</h2>
-        <div class="sustain-layout">
-          <ul class="checks">
-            <li>Progressive rehabilitation and biodiversity restoration plans</li>
-            <li>Water and energy efficiency systems across active sites</li>
-            <li>Local supplier development and workforce training initiatives</li>
-            <li>Transparent compliance with industry and regulatory standards</li>
-          </ul>
-          <aside class="sustain-card" aria-label="Sustainability commitment">
-            <p class="quote-mark">"</p>
-            <p>
-              We build for decades, not quarters. Every operational decision is measured against
-              safety, environmental stewardship, and shared value creation.
-            </p>
-            <p class="quote-author">Executive Leadership Team</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="panel reveal">
-        <p class="section-kicker">Latest Focus</p>
-        <h2>Strategic Priorities for 2026</h2>
-        <div class="news-grid">
-          <article>
-            <h3>Production Optimization</h3>
-            <p>
-              Expanded predictive maintenance and live performance dashboards to increase throughput
-              and reduce downtime.
-            </p>
-          </article>
-          <article>
-            <h3>Infrastructure Expansion</h3>
-            <p>
-              Corridor and terminal capability upgrades to strengthen export reliability and lead
-              times.
-            </p>
-          </article>
-          <article>
-            <h3>Community Development</h3>
-            <p>
-              Skills development and supplier participation initiatives focused on inclusive local
-              growth.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="panel contact reveal">
-        <p class="section-kicker">Connect</p>
-        <h2>Start a Conversation With Our Team</h2>
-        <p>
-          For project opportunities, supply partnerships, or investor engagement, connect with our
-          team and we will respond promptly.
-        </p>
-        <div class="contact-actions">
-          <a href="mailto:info@shilungwamining.com" class="btn btn-primary"
-            >info@shilungwamining.com</a
-          >
-          <a href="#top" class="btn btn-secondary">Back to Top</a>
+      <!-- Contact CTA -->
+      <section class="section-block bg-dark contact-cta reveal">
+        <div class="section-inner">
+          <p class="section-kicker">Connect</p>
+          <h2>Start a Conversation With Our Team</h2>
+          <p>
+            For project opportunities, supply partnerships, or investor engagement, connect with our
+            team and we will respond promptly.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:info@shilungwamining.com" class="btn btn-outline-light">info@shilungwamining.com</a>
+            <a href="contact.html" class="btn btn-primary">Contact Page</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Shilungwa Mining and Resources. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-smr.svg" alt="SMR logo" class="brand-logo" width="380" height="190" />
+          <p class="footer-tagline">Powering the present, reshaping the future through responsible extraction and sustainable growth.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact">
+            <li>info@shilungwamining.com</li>
+            <li>[phone_number]</li>
+            <li>[address]</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Follow Us</h4>
+          <ul class="footer-social">
+            <li><a href="#" aria-label="LinkedIn">in</a></li>
+            <li><a href="#" aria-label="Twitter / X">𝕏</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shilungwa Mining and Resources. All rights reserved.</p>
+      </div>
     </footer>
 
+    <noscript>
+      <style>
+        .main-nav { display: flex !important; }
+        .menu-button { display: none !important; }
+      </style>
+    </noscript>
+
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
