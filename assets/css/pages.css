@@ -428,6 +428,74 @@
   font-size: 0.95rem;
 }
 
+/* ---- Article Card Link Wrapper ---- */
+
+a.article-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a.article-card-link:hover .article-card,
+a.article-card-link:focus-visible .article-card {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: 0 16px 28px rgba(13, 66, 114, 0.14);
+}
+
+/* ---- Article Detail Page ---- */
+
+.article-hero-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.article-detail {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.article-detail h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.18;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+}
+
+.article-detail .article-meta {
+  margin-bottom: 1.5rem;
+}
+
+.article-detail p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.article-detail h2 {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin: 2rem 0 0.6rem;
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+
+.article-back:hover {
+  text-decoration: underline;
+}
+
 /* ===================================================
    Responsive — Page-Specific Overrides
    =================================================== */
