@@ -196,7 +196,8 @@
 }
 
 .section-block.bg-dark .section-kicker { color: var(--accent); }
-.section-block.bg-dark h2 { color: #ffffff; }
+.section-block.bg-dark h2,
+.section-block.bg-dark h3 { color: #ffffff; }
 .section-block.bg-dark p { color: #b0c4d8; }
 
 .section-kicker {
