@@ -47,7 +47,9 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.12 }
+    // threshold 0: a ratio-based threshold never fires for sections taller
+    // than the viewport divided by that ratio (e.g. the long services list).
+    { threshold: 0, rootMargin: '0px 0px -10% 0px' }
   );
 
   elements.forEach(function (el) {
